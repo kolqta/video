@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Примерни видео кодове</title>	
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
 <style>
 </style>
@@ -14,13 +14,33 @@
  
 <body>
 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+		<div class="container">
+			<h1>видео/аудио кодове</h1>
+			<p>Ще се описвам всичките кодове на които попадва за създаване на плеари и стримове чрез различни начини</p>
+		</div>
+    </div>
+	
 	<div class="container">
 	
 		<div class="row">
-			<p>
-				<h3><a href="examples/videojs_http_stream.html">VideoJS HTTP Streaming</a></h3>
-				<a href="https://github.com/videojs/http-streaming" target="_blank">videojs-http-streaming</a> lets you use a single format and deliver adaptive streaming video to all major desktop and mobile browsers. 
-			</p>
+			<div class="col-md-4">
+				<h2>VideoJS HTTP Streaming</h2>
+				<p><a href="https://github.com/videojs/http-streaming" target="_blank">videojs-http-streaming</a> lets you use a single format and deliver adaptive streaming video to all major desktop and mobile browsers. </p>
+				<p><a class="btn btn-default" href="examples/videojs_http_stream.html" role="button">View details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>HLS library</h2>
+				<p>Notice: this project will be deprecated and is succeeded by <a href="https://github.com/videojs/http-streaming" target="_blank">videojs-http-streaming</a>. VHS supports HLS and DASH and is built into video.js 7, see the <a href="https://blog.videojs.com/video-js-7-is-here/">video.js 7 blog post</a><br />
+				video.js HLS Source Handler</p>
+				<p><a class="btn btn-default" href="examples/videojs-contrib-hls.html" role="button">View details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>m3uStreamPlayer</h2>
+				<p>HTML5 Player from m3u playlist. Use playlist from Icecast server with audio/video HTML5 element.</p>
+				<p><a class="btn btn-default" href="examples/faimaison.html" role="button">View details &raquo;</a></p>
+			</div>
 		</div>
 		
 	</div>

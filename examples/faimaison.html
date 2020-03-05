@@ -12,7 +12,7 @@
 <div class="container">
 	<section class="source-info">
 		<h3>FAImaison</h3>
-		<video id="video"controls loop autoplay width="640" data-playlist="http://live.cloudfrancois.fr/playlist/faimaison"></video>
+		<video id="video"controls loop autoplay width="640" data-playlist="http://localhost/mysite/video/myvideo/media/Y&T - Greatest Hits [2020]/01. Y&T - Don't Bring Me Down.mp3"></video>
 		<p>
 			<button id="video-next-source">Next source</button>
 			<button id="video-randomize-source">Random source</button>
@@ -26,17 +26,16 @@
 		</p>
 	</section>
 </div>
-
 <script src="m3uStreamPlayer.js"></script>
 <script>
 m3uStreamPlayer.init({selector: '#video', debug: true});
 /**
 * Buttons
 */
-var buttonNextSource = document.querySelector('#video-next-source');
-var buttonRandomizeSource = document.querySelector('#video-randomize-source');
-buttonNextSource.addEventListener('click', function(){ m3uStreamPlayer.nextSource(document.querySelector('#video')); })
-buttonRandomizeSource.addEventListener('click', function(){ v.randomizeSource(document.querySelector('#video')); })
+<!-- var buttonNextSource = document.querySelector('#video-next-source'); -->
+<!-- var buttonRandomizeSource = document.querySelector('#video-randomize-source'); -->
+<!-- buttonNextSource.addEventListener('click', function(){ m3uStreamPlayer.nextSource(document.querySelector('#video')); }) -->
+<!-- buttonRandomizeSource.addEventListener('click', function(){ v.randomizeSource(document.querySelector('#video')); }) -->
 
 </script>
 </body>

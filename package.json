@@ -24,7 +24,7 @@
   ],
   "devDependencies": {},
   "dependencies": {
-    "@videojs/http-streaming": "^1.12.2",
+    "@videojs/http-streaming": "^2.15.0",
     "bootstrap": "^3.4.1",
     "coffee-script": "^1.12.7",
     "grunt": "~0.4.5",
